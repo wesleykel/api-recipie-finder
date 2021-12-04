@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&display=swap");
 :root {
+  --heading-font: "M PLUS Rounded 1c", sans-serif;
+  --color-zomp: hsla(162, 43%, 46%, 0.39);
+  --color-cadet-blue: #4d908e28;
+  --submit-button-color: #f9414486;
 }
 
 * {
@@ -7,23 +12,47 @@
 }
 #container {
   display: grid;
-  grid-template-rows: 100px 160px 50px 300px 420px;
+  grid-template-rows: 130px 290px 50px 360px 360px;
   width: 768px;
-
+  margin: 0 auto;
   border: 1px solid black;
+  border-radius: 15px;
+  background-color: var(--color-cadet-blue);
 }
 
 .grid_row {
   border: 1px solid red;
 }
 
+h1 {
+  padding-top: 50px;
+  font-family: var(--heading-font);
+  /*border: green 1px solid;*/
+  text-align: center;
+  line-height: 20%;
+  font-size: 80px;
+  padding-bottom: 50px;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+}
+
+#search_bar_box {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
 #country_meal_nav_box {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .country_meal {
-  border: 1px solid blue;
+  border: 1px solid rgba(128, 128, 128, 0.267);
+  background-color: white;
 }
 
 #country {
@@ -58,4 +87,31 @@
 .food_type {
   width: 50px;
   border-radius: 30px;
+}
+label {
+  font-family: var(--heading-font);
+  font-weight: bolder;
+}
+
+#search_button {
+  background-color: var(--submit-button-color);
+  font-family: var(--heading-font);
+  font-weight: bolder;
+  font-size: 23px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+}
+#search_bar {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid rgba(128, 128, 128, 0.404);
+}
+::placeholder {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 20px;
+}
+#picture_box {
+  background-color: violet;
 }

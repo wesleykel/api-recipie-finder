@@ -14,36 +14,49 @@
   </head>
   <body>
     <div id="container">
-      <section class="grid_row"><h1>Recipe's Now</h1></section>
+      <section class="grid_row"><h1>Recipe's Today</h1></section>
       <section class="grid_row" id="country_meal_nav_box">
-        <h2>Choose the country and type of meal</h2>
+        <h3>Chose the countries food you wold like to cook</h3>
         <nav class="country_meal" id="country">
           <button class="country_btn" id="england_btn" type="submit">
             <img
               class="flag_size"
-              src="united-kingdom.png"
+              src="icons/united-kingdom.png"
               alt="uk flag button"
             />
+            <label>British</label>
           </button>
           <button class="country_btn" id="italy_btn" type="submit">
-            <img class="flag_size" src="italy.png" alt="italy flag button" />
+            <img
+              class="flag_size"
+              src="icons/italy.png"
+              alt="italy flag button"
+            />
+            <label>Italian</label>
           </button>
           <button class="country_btn" id="usa_btn" type="submit">
             <img
               class="flag_size"
-              src="united-states.png"
+              src="icons/united-states.png"
               alt="usa flag button"
             />
+            <label>American</label>
           </button>
           <button class="country_btn" id="india_btn" type="submit">
-            <img class="flag_size" src="india.png" alt="india flag button" />
+            <img
+              class="flag_size"
+              src="icons/india.png"
+              alt="india flag button"
+            />
+            <label>Indian</label>
           </button>
         </nav>
+        <h3>Chose the type of meal</h3>
         <nav class="country_meal" id="meal_type">
           <button class="which_meal" id="breakfast" type="submit">
             <img
               class="food_type"
-              src="croissant.png"
+              src="icons/croissant.png"
               alt="croissant picture button"
             />
             <label>Breakfast</label>
@@ -52,7 +65,7 @@
           <button class="which_meal" id="lunch" type="submit">
             <img
               class="food_type"
-              src="sandwich.png"
+              src="icons/sandwich.png"
               alt="sandwich picture button"
             />
             <label>Lunch</label>
@@ -61,24 +74,31 @@
           <button class="which_meal" id="dinner" type="submit">
             <img
               class="food_type"
-              src="spaghetti.png"
+              src="icons/curry.png"
               alt="spaghetti picture button"
             />
             <label>Dinner</label>
           </button>
 
-          <button class="which_meal" id="dinner" type="submit">
+          <button class="which_meal" id="desert" type="submit">
             <img
               class="food_type"
-              src="spaghetti.png"
-              alt="spaghetti picture button"
+              src="icons/icecream.png"
+              alt="ice_cream picture button"
             />
-            <label>Dinner</label>
+            <label>Dessert</label>
           </button>
         </nav>
+        <h3>
+          Enter the ingredient you would like your recipe to be based on below
+        </h3>
       </section>
-      <section class="grid_row" id="search_bar">
-        <input id="search_bar" /><button>Submit</button>
+      <section class="grid_row" id="search_bar_box">
+        <input id="search_bar" placeholder=" ie Tofu" /><button
+          id="search_button"
+        >
+          Get your recipes
+        </button>
       </section>
       <section class="grid_row" id="picture_box"><img id="food_pic" /></section>
       <section class="grid_row" id="grid_container"></section>
