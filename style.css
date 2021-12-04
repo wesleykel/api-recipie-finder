@@ -1,0 +1,61 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#container {
+  display: grid;
+  grid-template-rows: 100px 160px 50px 300px 420px;
+  width: 768px;
+
+  border: 1px solid black;
+}
+
+.grid_row {
+  border: 1px solid red;
+}
+
+#country_meal_nav_box {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.country_meal {
+  border: 1px solid blue;
+}
+
+#country {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+.country_btn {
+  background-color: transparent;
+  width: 55px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+.flag_size {
+  width: 50px;
+}
+
+.country_meal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+.which_meal {
+  background-color: transparent;
+  width: 55px;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.food_type {
+  width: 50px;
+  border-radius: 30px;
+}

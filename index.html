@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <section class="grid_row"><h1>Recipe's Now</h1></section>
+      <section class="grid_row" id="country_meal_nav_box">
+        <h2>Choose the country and type of meal</h2>
+        <nav class="country_meal" id="country">
+          <button class="country_btn" id="england_btn" type="submit">
+            <img
+              class="flag_size"
+              src="united-kingdom.png"
+              alt="uk flag button"
+            />
+          </button>
+          <button class="country_btn" id="italy_btn" type="submit">
+            <img class="flag_size" src="italy.png" alt="italy flag button" />
+          </button>
+          <button class="country_btn" id="usa_btn" type="submit">
+            <img
+              class="flag_size"
+              src="united-states.png"
+              alt="usa flag button"
+            />
+          </button>
+          <button class="country_btn" id="india_btn" type="submit">
+            <img class="flag_size" src="india.png" alt="india flag button" />
+          </button>
+        </nav>
+        <nav class="country_meal" id="meal_type">
+          <button class="which_meal" id="breakfast" type="submit">
+            <img
+              class="food_type"
+              src="croissant.png"
+              alt="croissant picture button"
+            />
+            <label>Breakfast</label>
+          </button>
+
+          <button class="which_meal" id="lunch" type="submit">
+            <img
+              class="food_type"
+              src="sandwich.png"
+              alt="sandwich picture button"
+            />
+            <label>Lunch</label>
+          </button>
+
+          <button class="which_meal" id="dinner" type="submit">
+            <img
+              class="food_type"
+              src="spaghetti.png"
+              alt="spaghetti picture button"
+            />
+            <label>Dinner</label>
+          </button>
+
+          <button class="which_meal" id="dinner" type="submit">
+            <img
+              class="food_type"
+              src="spaghetti.png"
+              alt="spaghetti picture button"
+            />
+            <label>Dinner</label>
+          </button>
+        </nav>
+      </section>
+      <section class="grid_row" id="search_bar">
+        <input id="search_bar" /><button>Submit</button>
+      </section>
+      <section class="grid_row" id="picture_box"><img id="food_pic" /></section>
+      <section class="grid_row" id="grid_container"></section>
+    </div>
+
+    <script src="app.js" async defer></script>
+  </body>
+</html>
